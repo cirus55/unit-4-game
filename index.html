@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Crystals Collector Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="./assets/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="./assets/style.css">
+</head>
+<body>
+    <div class="jumbotron">
+        <h1 class="display-4 text-center">Crystals Collector</h1>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2">
+            </div>
+            <div class="col-md-8">
+                <p>You will be given a random number at the start of the game</p>
+                <br>
+                <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+                <br>
+                <p>You win the game by matching your total score to the random number, you lose the game if your total score goes above the random number.</p>
+                <br>
+                <p>The value of each crystal is hidden from you until you click on it.</p>
+                <br>
+                <p>Each time the game starts, the game will change the values of each crystal.</p>
+            </div>
+            <div class="col-md-2">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 styleNumber">
+                <span class="randNumber"></span>
+            </div>
+            <div class="col-md-6 styleResult">
+                    <p><span class="result"></span></p>
+                    <p>Wins: <span class="wins">0</span></p>
+                    <p>Losses: <span class="losses">0</span></p>
+                    <p>Your total score is: <span class="userTotalNumber"></span></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <img class="aquamarine" src="./assets/aquamarine.png" alt="">
+            </div>
+            <div class="col-md-3">
+                <img class="citrine" src="./assets/citrine.png" alt="">
+            </div>
+            <div class="col-md-3">
+                <img class="gemstone" src="./assets/gemstone.png" alt="">
+            </div>
+            <div class="col-md-3">
+                <img class="quartz" src="./assets/quartz_crystal.png" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="./assets/game.js"></script>
+</html>
