@@ -9,6 +9,7 @@ $(document).ready(function(){
     var valueCitrineJava;
     var valueGemstoneJava;
     var valueQuartzJava;
+    var isGameStart = false;
 
     function initialize(){
         randNumberJava = Math.floor(Math.random()*100)+69;
@@ -18,11 +19,14 @@ $(document).ready(function(){
         valueCitrineJava = Math.floor(Math.random()*30);
         valueGemstoneJava = Math.floor(Math.random()*30);
         valueQuartzJava = Math.floor(Math.random()*30);
+        isGameStart = true;
     };
 
     //Empieza el juego
     initialize();
     
+
+
 
     $(".aquamarine").on("click",function(){
         resultJava = resultJava + valueAquaJava;
@@ -39,6 +43,11 @@ $(document).ready(function(){
         $(".userTotalNumber").text(resultJava);
         $(".wins").text(winsJava);
         $(".losses").text(lossesJava);
+
+        if (resultJava == valueAquaJava){
+            $(".result").empty();
+        }
+
     });
 
     $(".citrine").on("click",function(){
@@ -56,6 +65,11 @@ $(document).ready(function(){
         $(".userTotalNumber").text(resultJava);
         $(".wins").text(winsJava);
         $(".losses").text(lossesJava);
+
+        if (resultJava == valueCitrineJava){
+            $(".result").empty();
+        }
+
     });
 
     $(".gemstone").on("click",function(){
@@ -73,6 +87,11 @@ $(document).ready(function(){
         $(".userTotalNumber").text(resultJava);
         $(".wins").text(winsJava);
         $(".losses").text(lossesJava);
+
+        if (resultJava == valueGemstoneJava){
+            $(".result").empty();
+        }
+
     });
 
     $(".quartz").on("click",function(){
@@ -90,6 +109,11 @@ $(document).ready(function(){
         $(".userTotalNumber").text(resultJava);
         $(".wins").text(winsJava);
         $(".losses").text(lossesJava);
+
+        if (resultJava == valueQuartzJava){
+            $(".result").empty();
+        }
+
     });
 
 });
